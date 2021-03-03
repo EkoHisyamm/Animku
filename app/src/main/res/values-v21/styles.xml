@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <!-- Text Size -->
+        <item name="android:textSize">18dp</item>
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:colorControlActivated">#fff</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">#fff</item>
+        <!-- Icon Color -->
+        <item name="android:tint">#fff</item>
+    </style>
+</resources>

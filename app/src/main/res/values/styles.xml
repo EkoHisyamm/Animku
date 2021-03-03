@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <!-- Text Size -->
+        <item name="android:textSize">18dp</item>
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">#fff</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">#fff</item>
+        <!-- Icon Color -->
+        <item name="android:tint">#fff</item>
+    </style>
+
+    <style name="AppVideoView" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#fff</item>
+    </style>
+
+    <style name= "Popins" parent= "android:Widget.TextView" >
+        <item name= "android:fontFamily" > sans-serif </item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

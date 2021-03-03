@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".VideoPlayer" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/player_view"
+            app:resize_mode="fit"
+            app:hide_on_touch="true"
+            app:show_timeout="5000"
+            app:rewind_increment="10000"
+            app:fastforward_increment="10000"
+            app:use_controller="true"
+            android:background="@android:color/background_dark"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:controller_layout_id="@layout/custom_controller"/>
+
+        <ProgressBar
+            android:theme="@style/AppVideoView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/player_view"
+            android:layout_below="@id/player_view" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Anime"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tvSinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Ini sinopis"
+            android:layout_below="@+id/tvJudul"
+            android:textColor="@android:color/white"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selengkapnya"
+            android:textColor="@color/pink"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Episode"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginVertical="10dp"
+            android:id="@+id/rvListEpisode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
