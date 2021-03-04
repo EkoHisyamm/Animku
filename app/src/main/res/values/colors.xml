@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="abu">#848484</color>
+    <color name="pink">#ff637c</color>
+    <color name="merah">#ff414d</color>
+    <color name="biru">#237db5</color>
+    <color name="back">#1d2947</color>
+    <color name="search">#232323</color>
+    <color name="backview">#121c34</color>
+    <color name="yellow">#ffe05d</color>
+    <color name="p_card">#333333</color>
+    <color name="p_background">#000000</color>
+    <color name="p_minitext">#b8b8b8</color>
+    <color name="p_titletext">#eb596e</color>
+    <color name="p_card2">#1B1B1B</color>
+</resources>
